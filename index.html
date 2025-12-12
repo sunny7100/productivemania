@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productive Mania - Discover the World's Most Mysterious Places</title>
+    <meta name="description" content="Your ultimate destination for captivating explorations to the most mysterious and amazing places in the world.">
+    <link rel="stylesheet" href="premium-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Productive Mania</h2>
+            <p>Loading mysterious destinations...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="premium-navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1 class="brand-logo">Productive Mania</h1>
+                <span class="brand-subtitle">Mysterious & Amazing Places</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#destinations" class="nav-link">Destinations</a>
+                <a href="#mysteries" class="nav-link">Mysteries</a>
+                <a href="#about" class="nav-link">About</a>
+
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="premium-hero" id="home">
+        <div class="hero-background-slideshow">
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80')"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1464822759844-d150ad4541d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-badge">
+                    <i class="fas fa-compass"></i>
+                    <span>Explore the Unknown</span>
+                </div>
+                <h1 class="hero-title">
+                    Discover the World's Most
+                    <span class="title-highlight">Mysterious Places</span>
+                </h1>
+                <p class="hero-subtitle">Journey with us to the unknown corners of our planet, where every destination tells a story of wonder, mystery, and adventure.</p>
+                <div class="hero-actions">
+                    <a href="#featured" class="hero-btn primary">
+                        <span>Start Exploring</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Destinations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Stories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2000">0</div>
+                        <div class="stat-label">Explorers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-icon">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Featured Stories Section -->
+    <section class="featured-stories" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Featured Stories</span>
+                </div>
+                <h2 class="section-title">Most Popular Mysterious Destinations</h2>
+                <p class="section-subtitle">Explore our most captivating stories about the world's hidden gems and unexplained phenomena</p>
+            </div>
+
+            <div class="featured-grid">
+                <!-- Main Featured Article -->
+                <article class="featured-main">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Tropical paradise island with crystal clear waters">
+                        <div class="article-overlay"></div>
+                        <div class="article-badge popular">
+                            <i class="fas fa-fire"></i>
+                            Most Popular
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category destinations">Destinations</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <h3 class="article-title">7 Breathtaking Islands That Will Pay You to Move</h3>
+                        <p class="article-excerpt">Discover incredible islands around the world offering financial incentives for new residents. From tropical paradises to remote Nordic communities, these destinations are actively seeking new inhabitants.</p>
+                        <div class="article-footer">
+                            <div class="article-info">
+                                <span class="read-time">
+                                    <i class="fas fa-clock"></i>
+                                    8 min read
+                                </span>
+                                <span class="date">March 2024</span>
+                            </div>
+                            <a href="articles/islands-that-pay-you.html" class="read-more">
+                                Read Story
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Secondary Featured Articles -->
+                <div class="featured-secondary">
+                    <article class="featured-card" onclick="window.location.href='articles/unsolved-mysteries.html'" style="cursor: pointer;">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" alt="Ancient mysterious stone ruins shrouded in mist">
+                        </div>
+                        <div class="card-content">
+                            <span class="category mysteries">Mysteries</span>
+                            <h4 class="card-title">Unsolved Mysteries That Have No Explanation</h4>
+                            <div class="card-meta">
+                                <span class="read-time">10 min read</span>
+                                <span class="date">March 2024</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured-card" onclick="window.location.href='articles/europe-hidden-gems.html'" style="cursor: pointer;">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Scenic European mountain village">
+                        </div>
+                        <div class="card-content">
+                            <span class="category hidden-gems">Hidden Gems</span>
+                            <h4 class="card-title">Europe's Hidden Gems You've Never Heard Of</h4>
+                            <div class="card-meta">
+                                <span class="read-time">7 min read</span>
+                                <span class="date">February 2024</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="destinations">
+        <div class="section-background" style="background-image: url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge light">
+                    <i class="fas fa-map"></i>
+                    <span>Explore Categories</span>
+                </div>
+                <h2 class="section-title light">Find Your Next Adventure</h2>
+                <p class="section-subtitle light">Choose the type of mysterious journey that calls to your wanderlust</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="category-title">Travel Destinations</h3>
+                    <p class="category-description">Amazing places around the world waiting to be discovered</p>
+                    <div class="category-stats">
+                        <span class="article-count">12 articles</span>
+                        <span class="popularity">Popular</span>
+                    </div>
+                    <a href="#" class="category-link">
+                        Explore Destinations
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="category-title">Mysteries & Unknown</h3>
+                    <p class="category-description">Unexplained phenomena and mysterious places that baffle scientists</p>
+                    <div class="category-stats">
+                        <span class="article-count">8 articles</span>
+                        <span class="popularity">Trending</span>
+                    </div>
+                    <a href="#" class="category-link">
+                        Uncover Mysteries
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="category-title">Hidden Gems</h3>
+                    <p class="category-description">Secret and lesser-known destinations off the beaten path</p>
+                    <div class="category-stats">
+                        <span class="article-count">10 articles</span>
+                        <span class="popularity">Exclusive</span>
+                    </div>
+                    <a href="#" class="category-link">
+                        Find Hidden Gems
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="category-title">Country Guides</h3>
+                    <p class="category-description">In-depth guides to countries and regions with insider tips</p>
+                    <div class="category-stats">
+                        <span class="article-count">8 articles</span>
+                        <span class="popularity">Detailed</span>
+                    </div>
+                    <a href="#" class="category-link">
+                        Browse Guides
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles Grid -->
+    <section class="articles-section" id="mysteries">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Latest Stories</span>
+                </div>
+                <h2 class="section-title">Recent Discoveries</h2>
+                <p class="section-subtitle">Fresh insights into the world's most intriguing places and phenomena</p>
+            </div>
+
+            <div class="articles-grid">
+                <article class="article-card" onclick="window.location.href='articles/germany-destination.html'" style="cursor: pointer;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Majestic German castle on hilltop">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category country-guides">Country Guides</span>
+                        <h3 class="card-title">Why Germany is the Ultimate Destination for Everyone</h3>
+                        <p class="card-excerpt">From fairy-tale castles to bustling cities, discover why Germany should be at the top of your travel list.</p>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="read-time">7 min read</span>
+                                <span class="date">Aug 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" onclick="window.location.href='articles/strangest-buildings.html'" style="cursor: pointer;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2025&q=80" alt="Unusual curved architectural building with unique design">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category mysteries">Mysteries</span>
+                        <h3 class="card-title">Strangest Buildings in the World</h3>
+                        <p class="card-excerpt">Explore the world's most unusual architectural creations that challenge conventional design.</p>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="read-time">6 min read</span>
+                                <span class="date">Jul 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" onclick="window.location.href='articles/albania-paradise.html'" style="cursor: pointer;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" alt="Pristine Albanian coastline">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category hidden-gems">Hidden Gems</span>
+                        <h3 class="card-title">Albania: Europe's Last Hidden Paradise</h3>
+                        <p class="card-excerpt">Discover Albania's pristine beaches, dramatic mountains, and authentic Mediterranean culture.</p>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="read-time">8 min read</span>
+                                <span class="date">Jun 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" onclick="window.location.href='articles/abandoned-russia.html'" style="cursor: pointer;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Derelict abandoned industrial building in Russia">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category mysteries">Mysteries</span>
+                        <h3 class="card-title">Abandoned Places Across Russia</h3>
+                        <p class="card-excerpt">Journey through Russia's most haunting abandoned locations and forgotten Soviet-era sites.</p>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="read-time">9 min read</span>
+                                <span class="date">May 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Northern lights over snowy landscape">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category destinations">Destinations</span>
+                        <h3 class="card-title">Top 5 Affordable Destinations for 2025</h3>
+                        <p class="card-excerpt">Budget-friendly travel destinations that offer incredible experiences without breaking the bank.</p>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="read-time">6 min read</span>
+                                <span class="date">Apr 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Vast Siberian taiga forest and wilderness landscape">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category destinations">Destinations</span>
+                        <h3 class="card-title">Unraveling the Secrets of Siberia</h3>
+                        <p class="card-excerpt">Venture into the vast wilderness of Siberia and discover its hidden treasures and indigenous cultures.</p>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="read-time">11 min read</span>
+                                <span class="date">Mar 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-background" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge light">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About Us</span>
+                    </div>
+                    <h2 class="section-title light">Welcome to Productive Mania</h2>
+                    <p class="about-description">Your ultimate destination for captivating explorations to the most mysterious and amazing places in the world. Join our community of inquisitive minds and embark on a journey through the unknown, the unexplained, and the unforgettable.</p>
+                    <p class="about-description">From remote islands that offer financial incentives to new residents, to ancient mysteries that continue to baffle scientists, we uncover the extraordinary places and phenomena that make our world endlessly fascinating.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <div>
+                                <h4>Unique Perspectives</h4>
+                                <p>We explore places and phenomena that others overlook</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-search"></i>
+                            <div>
+                                <h4>Deep Research</h4>
+                                <p>Every story is backed by thorough investigation</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Passionate Storytelling</h4>
+                                <p>We bring each destination to life with vivid narratives</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#featured" class="hero-btn primary">
+                            <i class="fas fa-compass"></i>
+                            <span>Explore Our Stories</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h2 class="newsletter-title">Stay in the Loop</h2>
+                <p class="newsletter-subtitle">Get notified about new mysterious destinations and hidden gems before anyone else</p>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="newsletter-info">
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span>Join 2,000+ explorers</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>No spam, ever</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Unsubscribe anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer">
+        <div class="footer-background" style="background-image: url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="brand-logo">Productive Mania</h3>
+                    <p class="brand-description">Discovering the world's most mysterious and amazing places, one story at a time.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#destinations">Travel Destinations</a></li>
+                            <li><a href="#mysteries">Mysteries & Unknown</a></li>
+                            <li><a href="#hidden-gems">Hidden Gems</a></li>
+                            <li><a href="#country-guides">Country Guides</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#newsletter">Newsletter</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#travel-tips">Travel Tips</a></li>
+                            <li><a href="#photography">Photography</a></li>
+                            <li><a href="#guides">Travel Guides</a></li>
+                            <li><a href="#stories">Story Archive</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Productive Mania. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#cookies">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="premium-script.js"></script>
+</body>
+</html>

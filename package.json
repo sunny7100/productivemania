@@ -1,0 +1,37 @@
+{
+  "name": "productive-mania-premium",
+  "version": "2.0.0",
+  "description": "Premium travel and mystery blog website for Productive Mania YouTube channel with advanced UI and animations",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --entry-file=index.html --open",
+    "dev": "live-server --port=3000 --entry-file=index.html --watch=. --open",
+    "build": "echo 'Building premium version...' && mkdir -p dist && cp -r * dist/",
+    "deploy": "npm run build && echo 'Ready for deployment!'",
+    "preview": "live-server --port=8080 --entry-file=index.html --no-browser"
+  },
+  "keywords": [
+    "travel",
+    "mystery",
+    "blog",
+    "destinations",
+    "hidden-gems",
+    "youtube",
+    "premium",
+    "interactive",
+    "responsive"
+  ],
+  "author": "Productive Mania",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
